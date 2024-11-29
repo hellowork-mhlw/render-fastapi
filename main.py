@@ -14,7 +14,7 @@ async def root():
 async def face():
     objs = DeepFace.analyze(
         img_path="img4.jpg",
-        actions=["age", "gender", "race", "emotion"],
+        actions=["age"],
     )
     return objs
 
